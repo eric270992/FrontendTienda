@@ -1,0 +1,7 @@
+{
+  "name": "FrontendTienda",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
