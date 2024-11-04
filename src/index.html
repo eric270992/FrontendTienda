@@ -30,27 +30,43 @@
       </ion-buttons>
   
       <ion-title>
-        My App
+        TIENDA
       </ion-title>
   
       <ion-buttons slot="end">
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
+            <!-- Element del menú principal -->
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#">INICIO</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+      
+            <!-- Submenú per a ADMIN -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="adminDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                ADMIN
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="adminDropdown">
+                <li><a class="dropdown-item" href="#">Empreses</a></li>
+                <li><a class="dropdown-item" href="#">Treballadors</a></li>
+              </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      
+            <!-- Submenú per a ARTICULOS -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="articlesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                ARTICULOS
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="articlesDropdown">
+                <li><a class="dropdown-item" href="#">Gestionar Articulos</a></li>
+                <li><a class="dropdown-item" href="#">Gestionar Familias</a></li>
+                <li><a class="dropdown-item" href="#">Gestionar SubFamilias</a></li>
+              </ul>
             </li>
           </ul>
         </div>
       </ion-buttons>
+      
     </ion-toolbar>
   </ion-header>
 
